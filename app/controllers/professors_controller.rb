@@ -4,7 +4,7 @@ class ProfessorsController < ApplicationController
   # GET /professors
   # GET /professors.json
   def index
-    @professors = Professor.search(params[:search])
+    @professors = Professor.all
   end
 
   # GET /professors/1
@@ -19,6 +19,11 @@ class ProfessorsController < ApplicationController
 
   # GET /professors/1/edit
   def edit
+  end
+
+  def search
+    @professors = Professor.where("name like ?", "%#{params[:name]}")
+    render :index
   end
 
   # POST /professors

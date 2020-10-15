@@ -4,7 +4,7 @@ class SemestersController < ApplicationController
   # GET /semesters
   # GET /semesters.json
   def index
-    @semesters = Semester.search(params[:search])
+    @semesters = Semester.all
   end
 
   # GET /semesters/1
