@@ -13,18 +13,18 @@
     <shared />
   </component>
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$/../assignment03-joliver2">
-      <sourceFolder url="file://$MODULE_DIR$/../assignment03-joliver2/test" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../assignment03-joliver2/spec" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../assignment03-joliver2/features" isTestSource="true" />
-      <excludeFolder url="file://$MODULE_DIR$/../assignment03-joliver2/.bundle" />
-      <excludeFolder url="file://$MODULE_DIR$/../assignment03-joliver2/components" />
-      <excludeFolder url="file://$MODULE_DIR$/../assignment03-joliver2/log" />
-      <excludeFolder url="file://$MODULE_DIR$/../assignment03-joliver2/public/packs" />
-      <excludeFolder url="file://$MODULE_DIR$/../assignment03-joliver2/public/system" />
-      <excludeFolder url="file://$MODULE_DIR$/../assignment03-joliver2/tmp" />
-      <excludeFolder url="file://$MODULE_DIR$/../assignment03-joliver2/vendor/bundle" />
-      <excludeFolder url="file://$MODULE_DIR$/../assignment03-joliver2/vendor/cache" />
+    <content url="file://$MODULE_DIR$/../assignment04-joliver2">
+      <sourceFolder url="file://$MODULE_DIR$/../assignment04-joliver2/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../assignment04-joliver2/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../assignment04-joliver2/features" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../assignment04-joliver2/.bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/../assignment04-joliver2/components" />
+      <excludeFolder url="file://$MODULE_DIR$/../assignment04-joliver2/log" />
+      <excludeFolder url="file://$MODULE_DIR$/../assignment04-joliver2/public/packs" />
+      <excludeFolder url="file://$MODULE_DIR$/../assignment04-joliver2/public/system" />
+      <excludeFolder url="file://$MODULE_DIR$/../assignment04-joliver2/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/../assignment04-joliver2/vendor/bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/../assignment04-joliver2/vendor/cache" />
     </content>
     <orderEntry type="jdk" jdkName="RVM: ruby-2.7.0" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
