@@ -9290,3 +9290,1413 @@ Processing by SectionsController#index as HTML
 Completed 200 OK in 97ms (Views: 94.1ms | ActiveRecord: 1.6ms | Allocations: 11563)
 
 
+Started GET "/" for ::1 at 2020-10-25 13:26:30 -0600
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 20.2ms | Allocations: 5154)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 109ms (Views: 83.2ms | ActiveRecord: 2.6ms | Allocations: 19712)
+
+
+Started GET "/students/search?name=Timmy&commit=Search" for ::1 at 2020-10-25 13:26:37 -0600
+Processing by StudentsController#search as HTML
+  Parameters: {"name"=>"Timmy", "commit"=>"Search"}
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE (name like '%Timmy')[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 811)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.3ms | Allocations: 4993)
+
+
+Started GET "/students/search?name=Timmy&commit=Search" for ::1 at 2020-10-25 13:26:41 -0600
+Processing by StudentsController#search as HTML
+  Parameters: {"name"=>"Timmy", "commit"=>"Search"}
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE (name like '%Timmy')[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 795)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 4954)
+
+
+Started GET "/students/search?name=Tom&commit=Search" for ::1 at 2020-10-25 13:26:56 -0600
+Processing by StudentsController#search as HTML
+  Parameters: {"name"=>"Tom", "commit"=>"Search"}
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE (name like '%Tom')[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 923)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.2ms | Allocations: 5102)
+
+
+Started GET "/students/search?name=Timmy&commit=Search" for ::1 at 2020-10-25 13:27:00 -0600
+Processing by StudentsController#search as HTML
+  Parameters: {"name"=>"Timmy", "commit"=>"Search"}
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE (name like '%Timmy')[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 795)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.3ms | Allocations: 4960)
+
+
+Started GET "/students/search?name=Timmy&commit=Search" for ::1 at 2020-10-25 13:27:10 -0600
+Processing by StudentsController#search as HTML
+  Parameters: {"name"=>"Timmy", "commit"=>"Search"}
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE (name like '%Timmy')[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 786)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.2ms | Allocations: 4937)
+
+
+Started GET "/students/search?name=Timmy&commit=Search" for ::1 at 2020-10-25 13:27:13 -0600
+Processing by StudentsController#search as HTML
+  Parameters: {"name"=>"Timmy", "commit"=>"Search"}
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE (name like '%Timmy')[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 786)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.2ms | Allocations: 4939)
+
+
+Started GET "/students/" for ::1 at 2020-10-25 13:27:23 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1017)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.1ms | Allocations: 5174)
+
+
+Started GET "/students/search?name=Timmy&commit=Search" for ::1 at 2020-10-25 13:27:25 -0600
+Processing by StudentsController#search as HTML
+  Parameters: {"name"=>"Timmy", "commit"=>"Search"}
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE (name like '%Timmy')[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 786)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 13.9ms | ActiveRecord: 0.2ms | Allocations: 4963)
+
+
+Started GET "/students/search?name=Sally&commit=Search" for ::1 at 2020-10-25 13:27:32 -0600
+Processing by StudentsController#search as HTML
+  Parameters: {"name"=>"Sally", "commit"=>"Search"}
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE (name like '%Sally')[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 786)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.5ms | Allocations: 4933)
+
+
+Started GET "/students/search?name=Sill&commit=Search" for ::1 at 2020-10-25 13:27:39 -0600
+Processing by StudentsController#search as HTML
+  Parameters: {"name"=>"Sill", "commit"=>"Search"}
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE (name like '%Sill')[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 911)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.2ms | Allocations: 5064)
+
+
+Started GET "/students/search?name=900110234&commit=Search" for ::1 at 2020-10-25 13:27:47 -0600
+Processing by StudentsController#search as HTML
+  Parameters: {"name"=>"900110234", "commit"=>"Search"}
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE (name like '%900110234')[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 786)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.2ms | Allocations: 4937)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT "departments".* FROM "departments"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mDepartment Destroy (1.1ms)[0m  [1m[31mDELETE FROM "departments" WHERE "departments"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/students" for ::1 at 2020-10-25 14:29:49 -0600
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 4983)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 99ms (Views: 61.7ms | ActiveRecord: 1.1ms | Allocations: 21794)
+
+
+Started GET "/students/search?name=Tom&commit=Search" for ::1 at 2020-10-25 14:29:55 -0600
+  
+AbstractController::ActionNotFound (The action 'search' could not be found for StudentsController):
+  
+actionpack (6.0.3.3) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.3.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.3) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/courses" for ::1 at 2020-10-25 14:30:02 -0600
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (2.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  ↳ app/views/courses/index.html.erb:21
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:23
+  [1m[36mDepartment Load (0.2ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:23
+  Rendered courses/index.html.erb within layouts/application (Duration: 45.0ms | Allocations: 11332)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 73ms (Views: 62.1ms | ActiveRecord: 5.0ms | Allocations: 17215)
+
+
+Started GET "/courses?search=Math" for ::1 at 2020-10-25 14:30:06 -0600
+Processing by CoursesController#index as HTML
+  Parameters: {"search"=>"Math"}
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE (department_id LIKE '%Math%' OR number LIKE '%Math%' OR hours LIKE '%Math%') ORDER BY "name" ASC[0m
+  ↳ app/views/courses/index.html.erb:21
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 802)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.2ms | Allocations: 5044)
+
+
+Started GET "/courses?search=1010" for ::1 at 2020-10-25 14:30:11 -0600
+Processing by CoursesController#index as HTML
+  Parameters: {"search"=>"1010"}
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE (department_id LIKE '%1010%' OR number LIKE '%1010%' OR hours LIKE '%1010%') ORDER BY "name" ASC[0m
+  ↳ app/views/courses/index.html.erb:21
+  [1m[36mDepartment Load (0.3ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:23
+  Rendered courses/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1649)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.5ms | Allocations: 5881)
+
+
+Started GET "/courses?search=1010" for ::1 at 2020-10-25 14:31:53 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CoursesController#index as HTML
+  Parameters: {"search"=>"1010"}
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE (department_id LIKE '%1010%' OR number LIKE '%1010%' OR hours LIKE '%1010%') ORDER BY "name" ASC[0m
+  ↳ app/views/courses/index.html.erb:21
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:23
+  Rendered courses/index.html.erb within layouts/application (Duration: 29.4ms | Allocations: 8291)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 47.4ms | ActiveRecord: 2.3ms | Allocations: 14245)
+
+
+Started GET "/courses?search=CS" for ::1 at 2020-10-25 14:31:56 -0600
+Processing by CoursesController#index as HTML
+  Parameters: {"search"=>"CS"}
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE (department_id LIKE '%CS%' OR number LIKE '%CS%' OR hours LIKE '%CS%') ORDER BY "name" ASC[0m
+  ↳ app/views/courses/index.html.erb:21
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 786)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.2ms | Allocations: 5008)
+
+
+Started GET "/courses?search=1010" for ::1 at 2020-10-25 14:34:53 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CoursesController#index as HTML
+  Parameters: {"search"=>"1010"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 1819)
+
+
+  
+ArgumentError (Unsupported argument type: all (Symbol)):
+  
+app/models/course.rb:11:in `search'
+app/controllers/courses_controller.rb:6:in `index'
+Started GET "/courses?search=1010" for ::1 at 2020-10-25 14:37:01 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CoursesController#index as HTML
+  Parameters: {"search"=>"1010"}
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (2.9ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE (department_id LIKE '%1010%' OR number LIKE '%1010%' OR hours LIKE '%1010%')[0m
+  ↳ app/views/courses/index.html.erb:21
+  [1m[36mDepartment Load (1.3ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:23
+  Rendered courses/index.html.erb within layouts/application (Duration: 34.7ms | Allocations: 8718)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 74ms (Views: 58.9ms | ActiveRecord: 8.3ms | Allocations: 14238)
+
+
+Started GET "/courses?search=Cs" for ::1 at 2020-10-25 14:37:07 -0600
+Processing by CoursesController#index as HTML
+  Parameters: {"search"=>"Cs"}
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE (department_id LIKE '%Cs%' OR number LIKE '%Cs%' OR hours LIKE '%Cs%')[0m
+  ↳ app/views/courses/index.html.erb:21
+  Rendered courses/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 781)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.2ms | Allocations: 4992)
+
+
+Started GET "/courses?search=CS" for ::1 at 2020-10-25 14:37:11 -0600
+Processing by CoursesController#index as HTML
+  Parameters: {"search"=>"CS"}
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE (department_id LIKE '%CS%' OR number LIKE '%CS%' OR hours LIKE '%CS%')[0m
+  ↳ app/views/courses/index.html.erb:21
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 781)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.2ms | Allocations: 5007)
+
+
+Started GET "/courses?search=Computer" for ::1 at 2020-10-25 14:37:14 -0600
+Processing by CoursesController#index as HTML
+  Parameters: {"search"=>"Computer"}
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE (department_id LIKE '%Computer%' OR number LIKE '%Computer%' OR hours LIKE '%Computer%')[0m
+  ↳ app/views/courses/index.html.erb:21
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 781)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.2ms | Allocations: 4993)
+
+
+Started GET "/courses?search=1010" for ::1 at 2020-10-25 14:37:30 -0600
+Processing by CoursesController#index as HTML
+  Parameters: {"search"=>"1010"}
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE (department_id LIKE '%1010%' OR number LIKE '%1010%' OR hours LIKE '%1010%')[0m
+  ↳ app/views/courses/index.html.erb:21
+  [1m[36mDepartment Load (0.1ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:23
+  Rendered courses/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1632)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.3ms | Allocations: 5839)
+
+
+Started GET "/courses?search=4" for ::1 at 2020-10-25 14:37:35 -0600
+Processing by CoursesController#index as HTML
+  Parameters: {"search"=>"4"}
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE (department_id LIKE '%4%' OR number LIKE '%4%' OR hours LIKE '%4%')[0m
+  ↳ app/views/courses/index.html.erb:21
+  [1m[36mDepartment Load (0.2ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:23
+  Rendered courses/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1632)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.4ms | Allocations: 5826)
+
+
+Started GET "/courses?search=4" for ::1 at 2020-10-25 14:37:40 -0600
+Processing by CoursesController#index as HTML
+  Parameters: {"search"=>"4"}
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE (department_id LIKE '%4%' OR number LIKE '%4%' OR hours LIKE '%4%')[0m
+  ↳ app/views/courses/index.html.erb:21
+  [1m[36mDepartment Load (0.1ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:23
+  Rendered courses/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1632)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.4ms | Allocations: 5836)
+
+
+Started GET "/courses" for ::1 at 2020-10-25 14:39:36 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  ↳ app/views/courses/index.html.erb:21
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:23
+  [1m[36mDepartment Load (0.1ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:23
+  Rendered courses/index.html.erb within layouts/application (Duration: 27.8ms | Allocations: 9909)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 37.5ms | ActiveRecord: 2.7ms | Allocations: 16117)
+
+
+Started GET "/courses" for ::1 at 2020-10-25 14:47:08 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  ↳ app/views/courses/index.html.erb:21
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:23
+  [1m[36mDepartment Load (0.3ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:23
+  Rendered courses/index.html.erb within layouts/application (Duration: 48.4ms | Allocations: 9316)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 88ms (Views: 81.5ms | ActiveRecord: 1.3ms | Allocations: 15484)
+
+
+Started GET "/departments" for ::1 at 2020-10-25 14:47:14 -0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  Rendered departments/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1213)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2275)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p id="notice"><%= notice %></p>
+
+<h1>Departments</h1>
+
+<table>
+  <%= form_tag departments_path, :method => "get" do  %>
+    <%= label_tag(:name, "Search for Department Name: ") %>
+    <%= text_field_tag :search, params [:search] %>
+    <%= submit_tag("Search", :name => nil) %>
+  <% end %>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @departments.each do |department| %>
+      <tr>
+        <td><%= department.name %></td>
+        <td><%= link_to 'Show', department %></td>
+        <td><%= link_to 'Edit', edit_department_path(department) %></td>
+        <td><%= link_to 'Destroy', department, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Department', new_department_path %>
+
+):
+1:    <p id="notice"><%= notice %></p>
+2:    
+3:    <h1>Departments</h1>
+4:    
+5:    <table>
+6:      <%= form_tag departments_path, :method => "get" do  %>
+7:        <%= label_tag(:name, "Search for Department Name: ") %>
+8:        <%= text_field_tag :search, params [:search] %>
+9:        <%= submit_tag("Search", :name => nil) %>
+10:      <% end %>
+11:      <thead>
+12:        <tr>
+13:          <th>Name</th>
+14:          <th colspan="3"></th>
+15:        </tr>
+16:      </thead>
+17:    
+18:      <tbody>
+19:        <% @departments.each do |department| %>
+20:          <tr>
+21:            <td><%= department.name %></td>
+22:            <td><%= link_to 'Show', department %></td>
+23:            <td><%= link_to 'Edit', edit_department_path(department) %></td>
+24:            <td><%= link_to 'Destroy', department, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+25:          </tr>
+26:        <% end %>
+27:      </tbody>
+28:    </table>
+29:    
+30:    <br>
+31:    
+32:    <%= link_to 'New Department', new_department_path %>
+  
+app/views/departments/index.html.erb:8: syntax error, unexpected [, expecting `do' or '{' or '('
+app/views/departments/index.html.erb:8: syntax error, unexpected [, expecting `do' or '{' or '('
+app/views/departments/index.html.erb:8: syntax error, unexpected [, expecting `do' or '{' or '('
+app/views/departments/index.html.erb:8: syntax error, unexpected [, expecting `do' or '{' or '('
+app/views/departments/index.html.erb:8: syntax error, unexpected [, expecting `do' or '{' or '('
+app/views/departments/index.html.erb:8: syntax error, unexpected [, expecting `do' or '{' or '('
+Started GET "/departments" for ::1 at 2020-10-25 14:47:42 -0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.2ms)[0m  [1m[34mSELECT "departments".* FROM "departments"[0m
+  ↳ app/views/departments/index.html.erb:19
+  Rendered departments/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1635)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.2ms | Allocations: 6726)
+
+
+Started GET "/departments?search=CS" for ::1 at 2020-10-25 14:47:46 -0600
+Processing by DepartmentsController#index as HTML
+  Parameters: {"search"=>"CS"}
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.2ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE (name LIKE '%CS%')[0m
+  ↳ app/views/departments/index.html.erb:19
+  Rendered departments/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1031)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.2ms | Allocations: 5228)
+
+
+Started GET "/departments?search=Physics" for ::1 at 2020-10-25 14:47:53 -0600
+Processing by DepartmentsController#index as HTML
+  Parameters: {"search"=>"Physics"}
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE (name LIKE '%Physics%')[0m
+  ↳ app/views/departments/index.html.erb:19
+  Rendered departments/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 898)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.4ms | Allocations: 5092)
+
+
+Started GET "/professors" for ::1 at 2020-10-25 14:49:57 -0600
+Processing by ProfessorsController#index as HTML
+  Rendering professors/index.html.erb within layouts/application
+  [1m[36mProfessor Load (1.0ms)[0m  [1m[34mSELECT "professors".* FROM "professors"[0m
+  ↳ app/views/professors/index.html.erb:20
+  Rendered professors/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 4273)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 32.1ms | ActiveRecord: 2.1ms | Allocations: 10203)
+
+
+Started GET "/professors?search=Smith" for ::1 at 2020-10-25 14:50:00 -0600
+Processing by ProfessorsController#index as HTML
+  Parameters: {"search"=>"Smith"}
+  Rendering professors/index.html.erb within layouts/application
+  [1m[36mProfessor Load (0.3ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE (name LIKE '%Smith%' OR office LIKE '%Smith%') ORDER BY "professors"."name" ASC[0m
+  ↳ app/views/professors/index.html.erb:20
+  Rendered professors/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 919)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.3ms | Allocations: 5148)
+
+
+Started GET "/professors?search=John" for ::1 at 2020-10-25 14:50:04 -0600
+Processing by ProfessorsController#index as HTML
+  Parameters: {"search"=>"John"}
+  Rendering professors/index.html.erb within layouts/application
+  [1m[36mProfessor Load (0.2ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE (name LIKE '%John%' OR office LIKE '%John%') ORDER BY "professors"."name" ASC[0m
+  ↳ app/views/professors/index.html.erb:20
+  Rendered professors/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 909)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.2ms | Allocations: 5127)
+
+
+Started GET "/professors" for ::1 at 2020-10-25 14:52:39 -0600
+Processing by ProfessorsController#index as HTML
+  Rendering professors/index.html.erb within layouts/application
+  [1m[36mProfessor Load (0.3ms)[0m  [1m[34mSELECT "professors".* FROM "professors"[0m
+  ↳ app/views/professors/index.html.erb:20
+  Rendered professors/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1475)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 29.3ms | ActiveRecord: 0.3ms | Allocations: 6551)
+
+
+Started GET "/sections" for ::1 at 2020-10-25 14:52:45 -0600
+Processing by SectionsController#index as HTML
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mSection Load (0.6ms)[0m  [1m[34mSELECT "sections".* FROM "sections"[0m
+  ↳ app/views/sections/index.html.erb:22
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mProfessor Load (0.2ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mSemester Load (0.4ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mCACHE Professor Load (0.1ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mProfessor Load (0.2ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  Rendered sections/index.html.erb within layouts/application (Duration: 61.1ms | Allocations: 16675)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 87ms (Views: 70.2ms | ActiveRecord: 3.5ms | Allocations: 23763)
+
+
+Started GET "/sections?search=1010" for ::1 at 2020-10-25 14:53:09 -0600
+Processing by SectionsController#index as HTML
+  Parameters: {"search"=>"1010"}
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mSection Load (0.6ms)[0m  [1m[34mSELECT "sections".* FROM "sections" WHERE (section_number LIKE '%1010%', section.courses LIKE '%1010%') ORDER BY "name" ASC[0m
+  ↳ app/views/sections/index.html.erb:22
+  Rendered sections/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2539)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.6ms | Allocations: 3779)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such column: section_number):
+    19:   </thead>
+    20: 
+    21:   <tbody>
+    22:     <% @sections.each do |section| %>
+    23:       <tr>
+    24:         <td><%= section.course.number %></td>
+    25:         <td><%= section.professor.name %></td>
+  
+app/views/sections/index.html.erb:22
+Started GET "/sections?search=Spring" for ::1 at 2020-10-25 14:53:16 -0600
+Processing by SectionsController#index as HTML
+  Parameters: {"search"=>"Spring"}
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mSection Load (0.9ms)[0m  [1m[34mSELECT "sections".* FROM "sections" WHERE (section_number LIKE '%Spring%', section.courses LIKE '%Spring%') ORDER BY "name" ASC[0m
+  ↳ app/views/sections/index.html.erb:22
+  Rendered sections/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2173)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.9ms | Allocations: 2678)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such column: section_number):
+    19:   </thead>
+    20: 
+    21:   <tbody>
+    22:     <% @sections.each do |section| %>
+    23:       <tr>
+    24:         <td><%= section.course.number %></td>
+    25:         <td><%= section.professor.name %></td>
+  
+app/views/sections/index.html.erb:22
+Started GET "/sections?search=Spring" for ::1 at 2020-10-25 14:55:30 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SectionsController#index as HTML
+  Parameters: {"search"=>"Spring"}
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mSection Load (0.9ms)[0m  [1m[34mSELECT "sections".* FROM "sections" WHERE (semester_id LIKE '%Spring%', section.courses LIKE '%Spring%') ORDER BY "name" ASC[0m
+  ↳ app/views/sections/index.html.erb:22
+  Rendered sections/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2137)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.9ms | Allocations: 5717)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such column: section.courses):
+    19:   </thead>
+    20: 
+    21:   <tbody>
+    22:     <% @sections.each do |section| %>
+    23:       <tr>
+    24:         <td><%= section.course.number %></td>
+    25:         <td><%= section.professor.name %></td>
+  
+app/views/sections/index.html.erb:22
+Started GET "/sections" for ::1 at 2020-10-25 14:57:23 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SectionsController#index as HTML
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mSection Load (1.0ms)[0m  [1m[34mSELECT "sections".* FROM "sections"[0m
+  ↳ app/views/sections/index.html.erb:22
+  [1m[36mCourse Load (1.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mProfessor Load (1.2ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mSemester Load (0.4ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  [1m[36mCACHE Course Load (0.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mCACHE Professor Load (0.1ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mProfessor Load (0.1ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  Rendered sections/index.html.erb within layouts/application (Duration: 115.8ms | Allocations: 23963)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 148ms (Views: 120.9ms | ActiveRecord: 15.7ms | Allocations: 30849)
+
+
+Started GET "/sections?search=Spring" for ::1 at 2020-10-25 14:57:27 -0600
+Processing by SectionsController#index as HTML
+  Parameters: {"search"=>"Spring"}
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mSection Load (0.2ms)[0m  [1m[34mSELECT "sections".* FROM "sections" WHERE (semester_id LIKE '%Spring%')[0m
+  ↳ app/views/sections/index.html.erb:22
+  Rendered sections/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 791)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.2ms | Allocations: 4978)
+
+
+Started GET "/sections" for ::1 at 2020-10-25 14:59:44 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SectionsController#index as HTML
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mSection Load (0.7ms)[0m  [1m[34mSELECT "sections".* FROM "sections"[0m
+  ↳ app/views/sections/index.html.erb:22
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mProfessor Load (0.4ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mSemester Load (0.4ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mCACHE Professor Load (0.1ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mProfessor Load (0.2ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mCACHE Semester Load (0.1ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  Rendered sections/index.html.erb within layouts/application (Duration: 115.7ms | Allocations: 23898)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 155ms (Views: 133.1ms | ActiveRecord: 9.3ms | Allocations: 30596)
+
+
+Started GET "/sections?search=Spring" for ::1 at 2020-10-25 14:59:49 -0600
+Processing by SectionsController#index as HTML
+  Parameters: {"search"=>"Spring"}
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mSection Load (0.2ms)[0m  [1m[34mSELECT "sections".* FROM "sections" WHERE (semester_id LIKE '%Spring%')[0m
+  ↳ app/views/sections/index.html.erb:22
+  Rendered sections/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 784)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.2ms | Allocations: 4966)
+
+
+Started GET "/sections?search=1010" for ::1 at 2020-10-25 14:59:57 -0600
+Processing by SectionsController#index as HTML
+  Parameters: {"search"=>"1010"}
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mSection Load (0.3ms)[0m  [1m[34mSELECT "sections".* FROM "sections" WHERE (semester_id LIKE '%1010%')[0m
+  ↳ app/views/sections/index.html.erb:22
+  Rendered sections/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 783)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.3ms | Allocations: 4975)
+
+
+Started GET "/sections/new" for ::1 at 2020-10-25 15:00:42 -0600
+Processing by SectionsController#new as HTML
+  Rendering sections/new.html.erb within layouts/application
+  [1m[36mCourse Load (0.7ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  ↳ app/views/sections/_form.html.erb:16
+  [1m[36mProfessor Load (0.2ms)[0m  [1m[34mSELECT "professors".* FROM "professors"[0m
+  ↳ app/views/sections/_form.html.erb:21
+  [1m[36mSemester Load (0.5ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters"[0m
+  ↳ app/views/sections/_form.html.erb:31
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/sections/_form.html.erb:36
+  Rendered sections/_form.html.erb (Duration: 90.6ms | Allocations: 14043)
+  Rendered sections/new.html.erb within layouts/application (Duration: 92.0ms | Allocations: 14376)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 127ms (Views: 108.5ms | ActiveRecord: 3.9ms | Allocations: 22177)
+
+
+Started GET "/sections" for ::1 at 2020-10-25 15:02:36 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SectionsController#index as HTML
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mSection Load (1.6ms)[0m  [1m[34mSELECT "sections".* FROM "sections"[0m
+  ↳ app/views/sections/index.html.erb:22
+  [1m[36mCourse Load (1.7ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mProfessor Load (0.4ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mSemester Load (0.4ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  [1m[36mCACHE Course Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mCACHE Professor Load (0.0ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mProfessor Load (0.1ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  Rendered sections/index.html.erb within layouts/application (Duration: 88.4ms | Allocations: 24259)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 128ms (Views: 106.3ms | ActiveRecord: 8.4ms | Allocations: 31709)
+
+
+Started GET "/sections?search=John" for ::1 at 2020-10-25 15:02:43 -0600
+Processing by SectionsController#index as HTML
+  Parameters: {"search"=>"John"}
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.8ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE (name LIKE '%John%')[0m
+  ↳ app/views/sections/index.html.erb:22
+  Rendered sections/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1007)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 9.4ms | ActiveRecord: 1.4ms | Allocations: 5948)
+
+
+Started GET "/sections" for ::1 at 2020-10-25 15:05:35 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SectionsController#index as HTML
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mSection Load (0.5ms)[0m  [1m[34mSELECT "sections".* FROM "sections"[0m
+  ↳ app/views/sections/index.html.erb:22
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mProfessor Load (0.6ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mSemester Load (0.5ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mCACHE Professor Load (0.1ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mProfessor Load (0.2ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  Rendered sections/index.html.erb within layouts/application (Duration: 114.1ms | Allocations: 24275)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 156ms (Views: 126.7ms | ActiveRecord: 5.3ms | Allocations: 31732)
+
+
+Started GET "/sections?search=Smith" for ::1 at 2020-10-25 15:05:39 -0600
+Processing by SectionsController#index as HTML
+  Parameters: {"search"=>"Smith"}
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mProfessor Load (0.2ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE (name LIKE '%Smith%')[0m
+  ↳ app/views/sections/index.html.erb:22
+  Rendered sections/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 3596)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms | Allocations: 4078)
+
+
+  
+ActionView::Template::Error (undefined method `course' for #<Professor:0x00007fdfe5b0b3b0>):
+    21:   <tbody>
+    22:     <% @sections.each do |section| %>
+    23:       <tr>
+    24:         <td><%= section.course.number %></td>
+    25:         <td><%= section.professor.name %></td>
+    26:         <td><%= section.year %></td>
+    27:         <td><%= section.semester.semester%></td>
+  
+app/views/sections/index.html.erb:24
+app/views/sections/index.html.erb:22
+Started GET "/sections?search=Smith" for ::1 at 2020-10-25 15:06:35 -0600
+Processing by SectionsController#index as HTML
+  Parameters: {"search"=>"Smith"}
+  Rendering sections/index.html.erb within layouts/application
+  Rendered sections/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1319)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2536)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"professors"}, missing required keys: [:id]):
+    3: <h1>Sections</h1>
+    4: 
+    5: <table>
+    6:   <%= form_tag professor_path, :method => "get" do  %>
+    7:     <%= label_tag(:name, "Search for a Professor:") %>
+    8:     <%= text_field_tag :search, params[:search] %>
+    9:     <%= submit_tag("Search", :name => nil) %>
+  
+app/views/sections/index.html.erb:6
+Started GET "/sections?search=Smith" for ::1 at 2020-10-25 15:06:55 -0600
+Processing by SectionsController#index as HTML
+  Parameters: {"search"=>"Smith"}
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mProfessor Load (0.6ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE (name LIKE '%Smith%')[0m
+  ↳ app/views/sections/index.html.erb:22
+  Rendered sections/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 3892)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.6ms | Allocations: 5109)
+
+
+  
+ActionView::Template::Error (undefined method `course' for #<Professor:0x00007fdfe5a4b948>):
+    21:   <tbody>
+    22:     <% @sections.each do |section| %>
+    23:       <tr>
+    24:         <td><%= section.course.number %></td>
+    25:         <td><%= section.professor.name %></td>
+    26:         <td><%= section.year %></td>
+    27:         <td><%= section.semester.semester%></td>
+  
+app/views/sections/index.html.erb:24
+app/views/sections/index.html.erb:22
+Started GET "/sections?search=Smith" for ::1 at 2020-10-25 15:07:29 -0600
+Processing by SectionsController#index as HTML
+  Parameters: {"search"=>"Smith"}
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mProfessor Load (0.5ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE (name LIKE '%Smith%')[0m
+  ↳ app/views/sections/index.html.erb:22
+  Rendered sections/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 3892)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.5ms | Allocations: 5109)
+
+
+  
+ActionView::Template::Error (undefined method `course' for #<Professor:0x00007fdfe1e1e290>):
+    21:   <tbody>
+    22:     <% @sections.each do |section| %>
+    23:       <tr>
+    24:         <td><%= section.course.number %></td>
+    25:         <td><%= section.professor.name %></td>
+    26:         <td><%= section.year %></td>
+    27:         <td><%= section.semester.semester%></td>
+  
+app/views/sections/index.html.erb:24
+app/views/sections/index.html.erb:22
+Started GET "/sections?search=Smith" for ::1 at 2020-10-25 15:08:23 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SectionsController#index as HTML
+  Parameters: {"search"=>"Smith"}
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mSection Load (0.5ms)[0m  [1m[34mSELECT "sections".* FROM "sections" WHERE (professor_id LIKE '%Smith%')[0m
+  ↳ app/views/sections/index.html.erb:22
+  Rendered sections/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1246)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 20.1ms | ActiveRecord: 0.8ms | Allocations: 8213)
+
+
+Started GET "/sections?search=Smith" for ::1 at 2020-10-25 15:08:33 -0600
+Processing by SectionsController#index as HTML
+  Parameters: {"search"=>"Smith"}
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mSection Load (0.3ms)[0m  [1m[34mSELECT "sections".* FROM "sections" WHERE (professor_id LIKE '%Smith%')[0m
+  ↳ app/views/sections/index.html.erb:22
+  Rendered sections/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 790)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.3ms | Allocations: 4995)
+
+
+Started GET "/sections" for ::1 at 2020-10-25 15:09:02 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SectionsController#index as HTML
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mSection Load (0.7ms)[0m  [1m[34mSELECT "sections".* FROM "sections"[0m
+  ↳ app/views/sections/index.html.erb:22
+  [1m[36mCourse Load (0.6ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mProfessor Load (0.6ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mSemester Load (0.5ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mCACHE Professor Load (0.0ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mProfessor Load (0.2ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  Rendered sections/index.html.erb within layouts/application (Duration: 84.0ms | Allocations: 23899)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 102ms (Views: 87.4ms | ActiveRecord: 5.4ms | Allocations: 30596)
+
+
+Started GET "/sections?search=2021" for ::1 at 2020-10-25 15:09:06 -0600
+Processing by SectionsController#index as HTML
+  Parameters: {"search"=>"2021"}
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mSection Load (0.3ms)[0m  [1m[34mSELECT "sections".* FROM "sections" WHERE (year LIKE '%2021%')[0m
+  ↳ app/views/sections/index.html.erb:22
+  Rendered sections/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 783)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.3ms | Allocations: 4979)
+
+
+Started GET "/sections?search=2020" for ::1 at 2020-10-25 15:09:11 -0600
+Processing by SectionsController#index as HTML
+  Parameters: {"search"=>"2020"}
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mSection Load (0.2ms)[0m  [1m[34mSELECT "sections".* FROM "sections" WHERE (year LIKE '%2020%')[0m
+  ↳ app/views/sections/index.html.erb:22
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mProfessor Load (0.2ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mSemester Load (0.1ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mCACHE Professor Load (0.0ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mProfessor Load (0.1ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  Rendered sections/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 7427)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 28.7ms | ActiveRecord: 0.8ms | Allocations: 11622)
+
+
+Started GET "/semesters" for ::1 at 2020-10-25 15:09:54 -0600
+Processing by SemestersController#index as HTML
+  Rendering semesters/index.html.erb within layouts/application
+  [1m[36mSemester Load (0.4ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters"[0m
+  ↳ app/views/semesters/index.html.erb:19
+  Rendered semesters/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1531)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.4ms | Allocations: 6640)
+
+
+Started GET "/semesters" for ::1 at 2020-10-25 15:11:06 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SemestersController#index as HTML
+  Rendering semesters/index.html.erb within layouts/application
+  [1m[36mSemester Load (0.5ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters"[0m
+  ↳ app/views/semesters/index.html.erb:19
+  Rendered semesters/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 3616)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 32.3ms | ActiveRecord: 1.0ms | Allocations: 8892)
+
+
+Started GET "/students/search?name=Summer&commit=Search" for ::1 at 2020-10-25 15:11:10 -0600
+  
+AbstractController::ActionNotFound (The action 'search' could not be found for StudentsController):
+  
+actionpack (6.0.3.3) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.3.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.3) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/semesters" for ::1 at 2020-10-25 15:11:30 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SemestersController#index as HTML
+  Rendering semesters/index.html.erb within layouts/application
+  [1m[36mSemester Load (0.5ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters"[0m
+  ↳ app/views/semesters/index.html.erb:19
+  Rendered semesters/index.html.erb within layouts/application (Duration: 23.5ms | Allocations: 3603)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 53.9ms | ActiveRecord: 6.0ms | Allocations: 8937)
+
+
+Started GET "/students/search?name=Summer&commit=Search" for ::1 at 2020-10-25 15:11:33 -0600
+  
+AbstractController::ActionNotFound (The action 'search' could not be found for StudentsController):
+  
+actionpack (6.0.3.3) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.3.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.3) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/sections?search=2020" for ::1 at 2020-10-25 15:12:00 -0600
+Processing by SectionsController#index as HTML
+  Parameters: {"search"=>"2020"}
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mSection Load (0.9ms)[0m  [1m[34mSELECT "sections".* FROM "sections" WHERE (year LIKE '%2020%')[0m
+  ↳ app/views/sections/index.html.erb:22
+  [1m[36mCourse Load (0.8ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mProfessor Load (0.9ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mSemester Load (0.2ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mCACHE Professor Load (0.0ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mCACHE Semester Load (0.4ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:24
+  [1m[36mProfessor Load (0.3ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:25
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:27
+  Rendered sections/index.html.erb within layouts/application (Duration: 107.1ms | Allocations: 21180)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 147ms (Views: 127.7ms | ActiveRecord: 10.8ms | Allocations: 28152)
+
+
+Started GET "/semesters" for ::1 at 2020-10-25 15:12:11 -0600
+Processing by SemestersController#index as HTML
+  Rendering semesters/index.html.erb within layouts/application
+  [1m[36mSemester Load (0.2ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters"[0m
+  ↳ app/views/semesters/index.html.erb:19
+  Rendered semesters/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1143)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.2ms | Allocations: 5306)
+
+
+Started GET "/students/search?name=Summer&commit=Search" for ::1 at 2020-10-25 15:12:14 -0600
+  
+AbstractController::ActionNotFound (The action 'search' could not be found for StudentsController):
+  
+actionpack (6.0.3.3) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.3.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.3) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/students/search?name=Spring&commit=Search" for ::1 at 2020-10-25 15:13:19 -0600
+  
+AbstractController::ActionNotFound (The action 'search' could not be found for StudentsController):
+  
+actionpack (6.0.3.3) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.3.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.3) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.3) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/semesters" for ::1 at 2020-10-25 15:15:03 -0600
+Processing by SemestersController#index as HTML
+  Rendering semesters/index.html.erb within layouts/application
+  [1m[36mSemester Load (0.1ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters"[0m
+  ↳ app/views/semesters/index.html.erb:19
+  Rendered semesters/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1442)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.1ms | Allocations: 6540)
+
+
+Started GET "/semesters?search=Spring" for ::1 at 2020-10-25 15:15:06 -0600
+Processing by SemestersController#index as HTML
+  Parameters: {"search"=>"Spring"}
+  Rendering semesters/index.html.erb within layouts/application
+  [1m[36mSemester Load (0.2ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE (semester LIKE '%Spring%')[0m
+  ↳ app/views/semesters/index.html.erb:19
+  Rendered semesters/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 909)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.2ms | Allocations: 5116)
+
+
+Started GET "/students/" for ::1 at 2020-10-25 15:18:00 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 4104)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 30.2ms | ActiveRecord: 1.0ms | Allocations: 12761)
+
+
+Started GET "/students?search=Tom" for ::1 at 2020-10-25 15:18:03 -0600
+Processing by StudentsController#index as HTML
+  Parameters: {"search"=>"Tom"}
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE (name LIKE '%Tom%' OR number LIKE '%Tom%') ORDER BY "students"."name" ASC[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2179)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.4ms | Allocations: 2679)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such column: number):
+    17:   </thead>
+    18: 
+    19:   <tbody>
+    20:     <% @students.each do |student| %>
+    21:       <tr>
+    22:         <td><%= student.name %></td>
+    23:         <td><%= student.identifier %></td>
+  
+app/views/students/index.html.erb:20
+Started GET "/students?search=Tom" for ::1 at 2020-10-25 15:18:12 -0600
+Processing by StudentsController#index as HTML
+  Parameters: {"search"=>"Tom"}
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.6ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE (name LIKE '%Tom%' OR number LIKE '%Tom%') ORDER BY "students"."name" ASC[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2172)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.6ms | Allocations: 2671)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such column: number):
+    17:   </thead>
+    18: 
+    19:   <tbody>
+    20:     <% @students.each do |student| %>
+    21:       <tr>
+    22:         <td><%= student.name %></td>
+    23:         <td><%= student.identifier %></td>
+  
+app/views/students/index.html.erb:20
+Started GET "/students/" for ::1 at 2020-10-25 15:19:23 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (1.7ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 3993)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 30.6ms | ActiveRecord: 2.6ms | Allocations: 10173)
+
+
+Started GET "/students?search=Tom" for ::1 at 2020-10-25 15:19:26 -0600
+Processing by StudentsController#index as HTML
+  Parameters: {"search"=>"Tom"}
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE (name LIKE '%Tom%' OR identifier LIKE '%Tom%') ORDER BY "students"."name" ASC[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 909)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 5124)
+
+
+Started GET "/students?search=900110234" for ::1 at 2020-10-25 15:19:33 -0600
+Processing by StudentsController#index as HTML
+  Parameters: {"search"=>"900110234"}
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE (name LIKE '%900110234%' OR identifier LIKE '%900110234%') ORDER BY "students"."name" ASC[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 908)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.3ms | Allocations: 5124)
+
+

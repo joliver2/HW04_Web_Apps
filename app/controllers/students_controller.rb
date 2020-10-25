@@ -4,7 +4,7 @@ class StudentsController < ApplicationController
   # GET /students
   # GET /students.json
   def index
-    @students = Student.all
+    @students = Student.search(params[:search])
   end
 
   # GET /students/1
@@ -20,13 +20,13 @@ class StudentsController < ApplicationController
 
   # GET /students/1/edit
   def edit
-    @sections = Section.all
+    @sections = Section.search(params[:search])
   end
 
-  def search
-    @students = Student.where("name like ?", "%#{params[:name]}")
-    render :index
-  end
+  #def search
+  #  @students = Student.where("name like ?", "%#{params[:name]}")
+  #  render :index
+  #end
 
   # POST /students
   # POST /students.json
