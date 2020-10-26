@@ -11174,3 +11174,1224 @@ Processing by StudentsController#index as HTML
 Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.2ms | Allocations: 6243)
 
 
+Started GET "/courses" for ::1 at 2020-10-25 18:04:37 -0600
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  ↳ app/views/courses/index.html.erb:21
+  [1m[36mDepartment Load (0.5ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:23
+  [1m[36mDepartment Load (0.3ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:23
+  Rendered courses/index.html.erb within layouts/application (Duration: 38.8ms | Allocations: 12515)
+Completed 500 Internal Server Error in 290ms (ActiveRecord: 2.7ms | Allocations: 154089)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `jobs_path' for #<#<Class:0x00007f84e61d7ed8>:0x00007f84e61d64c0>):
+    3: <header class='clearfix'>
+    4:   <div class="left-nav">
+    5:     <ul>
+    6:       <li><%= link_to "Home", jobs_path %></li>
+    7:     </ul>
+    8:   </div>
+    9:   <div class="right-nav">
+  
+app/views/layouts/application.html.erb:6
+Started GET "/courses" for ::1 at 2020-10-25 18:05:16 -0600
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  ↳ app/views/courses/index.html.erb:21
+  [1m[36mDepartment Load (0.2ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:23
+  [1m[36mDepartment Load (0.2ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:23
+  Rendered courses/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 2906)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 115ms (Views: 113.2ms | ActiveRecord: 0.5ms | Allocations: 11967)
+
+
+Started GET "/courses" for ::1 at 2020-10-25 18:06:16 -0600
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  ↳ app/views/courses/index.html.erb:21
+  [1m[36mDepartment Load (0.2ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:23
+  [1m[36mDepartment Load (0.2ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:23
+  Rendered courses/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 2866)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.8ms | Allocations: 8255)
+
+
+Started GET "/professors" for ::1 at 2020-10-25 18:06:17 -0600
+Processing by ProfessorsController#index as HTML
+  Rendering professors/index.html.erb within layouts/application
+  [1m[36mProfessor Load (0.8ms)[0m  [1m[34mSELECT "professors".* FROM "professors"[0m
+  ↳ app/views/professors/index.html.erb:20
+  Rendered professors/index.html.erb within layouts/application (Duration: 15.8ms | Allocations: 4382)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 35.9ms | ActiveRecord: 1.3ms | Allocations: 10247)
+
+
+Started GET "/courses" for ::1 at 2020-10-25 18:06:19 -0600
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  ↳ app/views/courses/index.html.erb:21
+  [1m[36mDepartment Load (0.2ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:23
+  [1m[36mDepartment Load (0.2ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:23
+  Rendered courses/index.html.erb within layouts/application (Duration: 15.5ms | Allocations: 2525)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.7ms | Allocations: 6817)
+
+
+Started GET "/students" for ::1 at 2020-10-25 18:06:20 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 4166)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 37.6ms | ActiveRecord: 1.1ms | Allocations: 11081)
+
+
+Started GET "/students" for ::1 at 2020-10-25 18:06:44 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1395)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.2ms | Allocations: 6792)
+
+
+Started GET "/departments" for ::1 at 2020-10-25 18:06:45 -0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.3ms)[0m  [1m[34mSELECT "departments".* FROM "departments"[0m
+  ↳ app/views/departments/index.html.erb:19
+  Rendered departments/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1691)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.3ms | Allocations: 6720)
+
+
+Started GET "/departments" for ::1 at 2020-10-25 18:07:25 -0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.1ms)[0m  [1m[34mSELECT "departments".* FROM "departments"[0m
+  ↳ app/views/departments/index.html.erb:19
+  Rendered departments/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1620)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.1ms | Allocations: 7066)
+
+
+Started GET "/departments" for ::1 at 2020-10-25 18:07:47 -0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.7ms)[0m  [1m[34mSELECT "departments".* FROM "departments"[0m
+  ↳ app/views/departments/index.html.erb:19
+  Rendered departments/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1620)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.7ms | Allocations: 7138)
+
+
+Started GET "/departments" for ::1 at 2020-10-25 18:08:10 -0600
+Processing by DepartmentsController#index as HTML
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.2ms)[0m  [1m[34mSELECT "departments".* FROM "departments"[0m
+  ↳ app/views/departments/index.html.erb:19
+  Rendered departments/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1620)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.2ms | Allocations: 7176)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2020-10-25 18:08:15 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7RBGja51IPJWEoVc6UixcotHr3aoNAku/F9GHwPqWTl73oMp3kJLLU1Iq733xR5QWxxEjgPz4t6kYeDIlY0Vlg=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 12ms (ActiveRecord: 0.0ms | Allocations: 2166)
+
+
+Started GET "/" for ::1 at 2020-10-25 18:08:15 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1398)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.2ms | Allocations: 6447)
+
+
+Started GET "/" for ::1 at 2020-10-25 18:08:19 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1050)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.1ms | Allocations: 5420)
+
+
+Started GET "/" for ::1 at 2020-10-25 18:08:21 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1041)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.2ms | Allocations: 5398)
+
+
+Started GET "/users/login" for ::1 at 2020-10-25 18:10:31 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/login"):
+  
+actionpack (6.0.3.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/sign_up" for ::1 at 2020-10-25 18:10:46 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 22ms (ActiveRecord: 1.6ms | Allocations: 6545)
+
+
+Started GET "/" for ::1 at 2020-10-25 18:10:46 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1040)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.7ms | Allocations: 5416)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-10-25 18:10:52 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms | Allocations: 1789)
+
+
+Started GET "/" for ::1 at 2020-10-25 18:10:52 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1040)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.2ms | Allocations: 5390)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2020-10-25 18:10:56 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PKGkeFHdOe2DG4rdreZMdwLt0JMTz5D5sKNZJjSqJbvyHFIUr69B6ZedWYq0KZll0HQwFF8FfgbAfhLEyjSWFA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.4ms | Allocations: 2742)
+
+
+Started GET "/" for ::1 at 2020-10-25 18:10:56 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1044)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.3ms | Allocations: 5379)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-10-25 18:11:04 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_error_messages.html.erb (Duration: 1.5ms | Allocations: 197)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 3.3ms | Allocations: 513)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 39.2ms | Allocations: 5514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 54.7ms | ActiveRecord: 0.0ms | Allocations: 11036)
+
+
+Started GET "/students" for ::1 at 2020-10-25 18:11:07 -0600
+Processing by StudentsController#index as HTML
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.9ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1052)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.9ms | Allocations: 5375)
+
+
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/sign_up" for ::1 at 2020-10-25 18:13:34 -0600
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_error_messages.html.erb (Duration: 1.6ms | Allocations: 198)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 2.0ms | Allocations: 517)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 32.1ms | Allocations: 5040)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 123ms (Views: 89.8ms | ActiveRecord: 1.2ms | Allocations: 20379)
+
+
+Started GET "/students" for ::1 at 2020-10-25 18:13:37 -0600
+Processing by StudentsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 353)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-10-25 18:13:37 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 201)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1647)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.0ms | Allocations: 7203)
+
+
+Started GET "/students" for ::1 at 2020-10-25 18:13:38 -0600
+Processing by StudentsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 302)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-10-25 18:13:38 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1031)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 5641)
+
+
+Started GET "/courses" for ::1 at 2020-10-25 18:13:38 -0600
+Processing by CoursesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 363)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-10-25 18:13:38 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 131)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1031)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms | Allocations: 5633)
+
+
+Started GET "/professors" for ::1 at 2020-10-25 18:13:39 -0600
+Processing by ProfessorsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 377)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-10-25 18:13:39 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1030)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 5617)
+
+
+Started GET "/departments" for ::1 at 2020-10-25 18:13:40 -0600
+Processing by DepartmentsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 369)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-10-25 18:13:40 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1031)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 5644)
+
+
+Started GET "/sections" for ::1 at 2020-10-25 18:13:41 -0600
+Processing by SectionsController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 373)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-10-25 18:13:41 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1030)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 5609)
+
+
+Started GET "/semesters" for ::1 at 2020-10-25 18:13:42 -0600
+Processing by SemestersController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 369)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-10-25 18:13:42 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1030)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 5601)
+
+
+Started GET "/students" for ::1 at 2020-10-25 18:13:44 -0600
+Processing by StudentsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 306)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-10-25 18:13:44 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1030)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 5615)
+
+
+Started GET "/students" for ::1 at 2020-10-25 18:15:04 -0600
+Processing by StudentsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 304)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-10-25 18:15:04 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 512)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1936)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms | Allocations: 8144)
+
+
+Started GET "/students" for ::1 at 2020-10-25 18:15:06 -0600
+Processing by StudentsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 298)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-10-25 18:15:06 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1036)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 5610)
+
+
+Started GET "/semesters" for ::1 at 2020-10-25 18:15:07 -0600
+Processing by SemestersController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 304)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-10-25 18:15:07 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 131)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1030)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 5643)
+
+
+Started GET "/sections" for ::1 at 2020-10-25 18:15:08 -0600
+Processing by SectionsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 298)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-10-25 18:15:08 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 131)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1030)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 5626)
+
+
+Started GET "/departments" for ::1 at 2020-10-25 18:15:09 -0600
+Processing by DepartmentsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 312)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-10-25 18:15:09 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 131)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1030)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 5618)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-10-25 18:15:18 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"qVge0Aikvb0WaSjyvHYyrNY8Dp+W+3uw9GGEdKN0egXZxkg9EKx3ob4bpqhgQKja/S2wyIaJcZG1orQfGaFtkg==", "user"=>{"email"=>"email@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "email@email.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 277ms (ActiveRecord: 0.7ms | Allocations: 2591)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"qVge0Aikvb0WaSjyvHYyrNY8Dp+W+3uw9GGEdKN0egXZxkg9EKx3ob4bpqhgQKja/S2wyIaJcZG1orQfGaFtkg==", "user"=>{"email"=>"email@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1033)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 279ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 5564)
+
+
+Started GET "/students" for ::1 at 2020-10-25 18:15:20 -0600
+Processing by StudentsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 279)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-10-25 18:15:21 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1030)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms | Allocations: 5613)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-10-25 18:15:22 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 189)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 81)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1766)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 7025)
+
+
+Started GET "/students" for ::1 at 2020-10-25 18:17:04 -0600
+Processing by StudentsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 310)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-10-25 18:17:04 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 512)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1932)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.0ms | Allocations: 7841)
+
+
+Started GET "/semesters" for ::1 at 2020-10-25 18:17:11 -0600
+Processing by SemestersController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 318)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-10-25 18:17:11 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 131)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1037)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.0ms | Allocations: 5476)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-10-25 18:17:16 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_error_messages.html.erb (Duration: 2.4ms | Allocations: 189)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 81)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 17.4ms | Allocations: 1762)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 0.0ms | Allocations: 6856)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-10-25 18:17:28 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"7zQg6rsM4wkTPxefymo6o9OKZvT2gjULmGLjjotwjp0FSc4t1aYDK8UMHfOdvS7nprOCbYjSc2P/koywkFvN9g==", "user"=>{"email"=>"email@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "email@email.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 264ms (ActiveRecord: 0.2ms | Allocations: 1880)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"7zQg6rsM4wkTPxefymo6o9OKZvT2gjULmGLjjotwjp0FSc4t1aYDK8UMHfOdvS7nprOCbYjSc2P/koywkFvN9g==", "user"=>{"email"=>"email@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1039)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 273ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 5413)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-10-25 18:17:30 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 79)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1039)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.0ms | Allocations: 5397)
+
+
+Started POST "/users" for ::1 at 2020-10-25 18:17:42 -0600
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"EbOLReLiXnO2FeeFRvkrJcBIsr4H3UMjWGh8np/pU0jcGABG3x+At4vsseHoPMnn5Rd+GILPkqOGlIHdZXFxaA==", "user"=>{"email"=>"email@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "email@email.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 220)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 79)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1242)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 322ms (Views: 13.6ms | ActiveRecord: 0.3ms | Allocations: 15085)
+
+
+Started POST "/users" for ::1 at 2020-10-25 18:17:47 -0600
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"lbdo8cp4TiW+25oiQhBIQIivcsaYjFW/+VP/Hr/BZkx/yoY2pNKuB2jokE4Vx1wE/ZaWX+bcE9eeo5AgpOolJw==", "user"=>{"email"=>"email1@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "email1@email.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 206)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 79)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1228)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 15.3ms | ActiveRecord: 0.4ms | Allocations: 11256)
+
+
+Started POST "/users" for ::1 at 2020-10-25 18:18:00 -0600
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"+P4bndX/2LGqPmSAGZ+4Jkkb/QpruR4iZDnV8sCHoq4Sg/Vau1U4k3wNbuxOSKxiPCIZkxXpWEoDybrM26zhxQ==", "user"=>{"email"=>"email1@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "email1@email.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "email1@email.com"], ["encrypted_password", "$2a$12$KNyxaE7f/p.k1os8nfAud.WzK3XIatYqWzwaJJit88.j6BeOhL7SS"], ["created_at", "2020-10-26 00:18:01.046889"], ["updated_at", "2020-10-26 00:18:01.046889"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/semesters
+Completed 302 Found in 299ms (ActiveRecord: 4.3ms | Allocations: 7125)
+
+
+Started GET "/semesters" for ::1 at 2020-10-25 18:18:01 -0600
+Processing by SemestersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering semesters/index.html.erb within layouts/application
+  [1m[36mSemester Load (0.6ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters"[0m
+  ↳ app/views/semesters/index.html.erb:53
+  Rendered semesters/index.html.erb within layouts/application (Duration: 11.5ms | Allocations: 4102)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 28.3ms | ActiveRecord: 1.7ms | Allocations: 11470)
+
+
+Started GET "/students" for ::1 at 2020-10-25 18:18:13 -0600
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:20
+  Rendered students/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 4197)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 19.5ms | ActiveRecord: 1.7ms | Allocations: 12618)
+
+
+Started GET "/semesters" for ::1 at 2020-10-25 18:19:00 -0600
+Processing by SemestersController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering semesters/index.html.erb within layouts/application
+  [1m[36mSemester Load (0.2ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters"[0m
+  ↳ app/views/semesters/index.html.erb:53
+  Rendered semesters/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1795)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 30.4ms | ActiveRecord: 1.3ms | Allocations: 8425)
+
+
+Started GET "/students" for ::1 at 2020-10-25 18:19:02 -0600
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:52
+  Rendered students/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1689)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 19.9ms | ActiveRecord: 0.5ms | Allocations: 7931)
+
+
+Started GET "/courses" for ::1 at 2020-10-25 18:19:03 -0600
+Processing by CoursesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  ↳ app/views/courses/index.html.erb:53
+  [1m[36mDepartment Load (0.1ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:55
+  [1m[36mDepartment Load (0.2ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:55
+  Rendered courses/index.html.erb within layouts/application (Duration: 33.4ms | Allocations: 11210)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 44.1ms | ActiveRecord: 2.4ms | Allocations: 20353)
+
+
+Started GET "/professors" for ::1 at 2020-10-25 18:19:04 -0600
+Processing by ProfessorsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering professors/index.html.erb within layouts/application
+  [1m[36mProfessor Load (0.5ms)[0m  [1m[34mSELECT "professors".* FROM "professors"[0m
+  ↳ app/views/professors/index.html.erb:52
+  Rendered professors/index.html.erb within layouts/application (Duration: 11.2ms | Allocations: 4588)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 21.1ms | ActiveRecord: 1.4ms | Allocations: 11626)
+
+
+Started GET "/departments" for ::1 at 2020-10-25 18:19:05 -0600
+Processing by DepartmentsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (2.0ms)[0m  [1m[34mSELECT "departments".* FROM "departments"[0m
+  ↳ app/views/departments/index.html.erb:51
+  Rendered departments/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1982)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 19.7ms | ActiveRecord: 2.1ms | Allocations: 8240)
+
+
+Started GET "/sections" for ::1 at 2020-10-25 18:19:06 -0600
+Processing by SectionsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mSection Load (0.5ms)[0m  [1m[34mSELECT "sections".* FROM "sections"[0m
+  ↳ app/views/sections/index.html.erb:54
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:56
+  [1m[36mProfessor Load (0.2ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:57
+  [1m[36mSemester Load (0.3ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:59
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:56
+  [1m[36mCACHE Professor Load (0.0ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:57
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:59
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:56
+  [1m[36mProfessor Load (0.2ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:57
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:59
+  Rendered sections/index.html.erb within layouts/application (Duration: 33.7ms | Allocations: 14138)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 64ms (Views: 43.3ms | ActiveRecord: 2.6ms | Allocations: 22673)
+
+
+Started GET "/students" for ::1 at 2020-10-25 18:19:13 -0600
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:52
+  Rendered students/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1203)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 16.5ms | ActiveRecord: 0.5ms | Allocations: 6782)
+
+
+Started GET "/students" for ::1 at 2020-10-25 18:19:23 -0600
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:48
+  Rendered students/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1649)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 14.9ms | ActiveRecord: 0.3ms | Allocations: 8268)
+
+
+Started GET "/students" for ::1 at 2020-10-25 18:20:11 -0600
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:48
+  Rendered students/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1648)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 14.8ms | ActiveRecord: 0.3ms | Allocations: 8242)
+
+
+Started GET "/semesters" for ::1 at 2020-10-25 18:20:12 -0600
+Processing by SemestersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering semesters/index.html.erb within layouts/application
+  [1m[36mSemester Load (0.1ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters"[0m
+  ↳ app/views/semesters/index.html.erb:49
+  Rendered semesters/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1755)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 13.7ms | ActiveRecord: 0.4ms | Allocations: 8021)
+
+
+Started GET "/sections" for ::1 at 2020-10-25 18:20:13 -0600
+Processing by SectionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mSection Load (0.2ms)[0m  [1m[34mSELECT "sections".* FROM "sections"[0m
+  ↳ app/views/sections/index.html.erb:50
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:52
+  [1m[36mProfessor Load (0.2ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:53
+  [1m[36mSemester Load (0.1ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:55
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:52
+  [1m[36mCACHE Professor Load (0.0ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:53
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:55
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:52
+  [1m[36mProfessor Load (0.2ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:53
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:55
+  Rendered sections/index.html.erb within layouts/application (Duration: 22.5ms | Allocations: 8099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 32.9ms | ActiveRecord: 1.2ms | Allocations: 14359)
+
+
+Started GET "/departments" for ::1 at 2020-10-25 18:20:14 -0600
+Processing by DepartmentsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.2ms)[0m  [1m[34mSELECT "departments".* FROM "departments"[0m
+  ↳ app/views/departments/index.html.erb:47
+  Rendered departments/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1873)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 16.5ms | ActiveRecord: 0.7ms | Allocations: 8115)
+
+
+Started GET "/professors" for ::1 at 2020-10-25 18:20:15 -0600
+Processing by ProfessorsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering professors/index.html.erb within layouts/application
+  [1m[36mProfessor Load (0.3ms)[0m  [1m[34mSELECT "professors".* FROM "professors"[0m
+  ↳ app/views/professors/index.html.erb:48
+  Rendered professors/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1776)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 16.9ms | ActiveRecord: 0.5ms | Allocations: 8016)
+
+
+Started GET "/courses" for ::1 at 2020-10-25 18:20:16 -0600
+Processing by CoursesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  ↳ app/views/courses/index.html.erb:49
+  [1m[36mDepartment Load (0.2ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:51
+  [1m[36mDepartment Load (0.1ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:51
+  Rendered courses/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 3117)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 18.2ms | ActiveRecord: 0.6ms | Allocations: 9380)
+
+
+Started GET "/students" for ::1 at 2020-10-25 18:20:17 -0600
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:48
+  Rendered students/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1182)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 11.5ms | ActiveRecord: 1.9ms | Allocations: 6773)
+
+
+Started GET "/students/new" for ::1 at 2020-10-25 18:20:21 -0600
+Processing by StudentsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering students/new.html.erb within layouts/application
+  [1m[36mSection Load (0.2ms)[0m  [1m[34mSELECT "sections".* FROM "sections"[0m
+  ↳ app/views/students/_form.html.erb:26
+  Rendered students/_form.html.erb (Duration: 28.1ms | Allocations: 9327)
+  Rendered students/new.html.erb within layouts/application (Duration: 30.8ms | Allocations: 9655)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 38.8ms | ActiveRecord: 0.9ms | Allocations: 15274)
+
+
+Started POST "/students" for ::1 at 2020-10-25 18:20:36 -0600
+Processing by StudentsController#create as HTML
+  Parameters: {"authenticity_token"=>"nqLV1G1UYsDKVG1UJtXeryuFJvoNASGN1xSSavL66HyitoKezv2kVeR3Njp9wLCUcUCGb9ZXuPfLUQSH1d9yng==", "student"=>{"name"=>"Test Tickles", "identifier"=>"9005556789", "section_ids"=>["", "3"]}, "commit"=>"Create Student"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mSection Load (0.4ms)[0m  [1m[34mSELECT "sections".* FROM "sections" WHERE "sections"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/students_controller.rb:34:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/students_controller.rb:38:in `block in create'
+  [1m[36mCourse Load (0.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:38:in `block in create'
+  [1m[36mProfessor Load (0.1ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:38:in `block in create'
+  [1m[36mSemester Load (0.1ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:38:in `block in create'
+  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("name", "identifier", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Test Tickles"], ["identifier", 9005556789], ["created_at", "2020-10-26 00:20:36.996775"], ["updated_at", "2020-10-26 00:20:36.996775"]]
+  ↳ app/controllers/students_controller.rb:38:in `block in create'
+  [1m[36mStudent::HABTM_Sections Create (0.3ms)[0m  [1m[32mINSERT INTO "sections_students" ("student_id", "section_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["student_id", 3], ["section_id", 3], ["created_at", "2020-10-26 00:20:36.999343"], ["updated_at", "2020-10-26 00:20:36.999343"]]
+  ↳ app/controllers/students_controller.rb:38:in `block in create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/students_controller.rb:38:in `block in create'
+Redirected to http://localhost:3000/students/3
+Completed 302 Found in 41ms (ActiveRecord: 3.1ms | Allocations: 14020)
+
+
+Started GET "/students/3" for ::1 at 2020-10-25 18:20:37 -0600
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/students_controller.rb:76:in `set_student'
+  Rendering students/show.html.erb within layouts/application
+  [1m[36mSection Load (0.4ms)[0m  [1m[34mSELECT "sections".* FROM "sections" INNER JOIN "sections_students" ON "sections"."id" = "sections_students"."section_id" WHERE "sections_students"."student_id" = ?[0m  [["student_id", 3]]
+  ↳ app/views/students/show.html.erb:17
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/students/show.html.erb:18
+  [1m[36mProfessor Load (0.4ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/students/show.html.erb:18
+  [1m[36mSemester Load (0.3ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/students/show.html.erb:18
+  Rendered students/show.html.erb within layouts/application (Duration: 24.8ms | Allocations: 4284)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 75ms (Views: 63.5ms | ActiveRecord: 2.1ms | Allocations: 10683)
+
+
+Started GET "/students" for ::1 at 2020-10-25 18:20:39 -0600
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:48
+  Rendered students/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1300)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 9.9ms | ActiveRecord: 0.5ms | Allocations: 6893)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2020-10-25 18:20:45 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yMnuckbTW5V9X6BXUGebp/sPA0B5VBLF+YMFwRiDxUkitAC1KHm7t6tsqjsHsI/jjjbn2QcEVK2ec2r/A6iGIg=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.4ms | Allocations: 2495)
+
+
+Started GET "/" for ::1 at 2020-10-25 18:20:45 -0600
+Processing by StudentsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 266)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-10-25 18:20:45 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 2.2ms | Allocations: 513)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1938)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.0ms | Allocations: 7474)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-10-25 18:21:06 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"97B4GsYICGBXugFB7GlhIj4/l8UrrqrUaBoozTEKxTxHgIAPKM6bc2mrRDSNqdEWFNmM/uQCFCLiBeXhbMCYxA==", "user"=>{"email"=>"dude@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "dude@email.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.2ms | Allocations: 1813)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"97B4GsYICGBXugFB7GlhIj4/l8UrrqrUaBoozTEKxTxHgIAPKM6bc2mrRDSNqdEWFNmM/uQCFCLiBeXhbMCYxA==", "user"=>{"email"=>"dude@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1034)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 274ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 5413)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-10-25 18:21:08 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_error_messages.html.erb (Duration: 1.7ms | Allocations: 189)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 81)
+  Rendered /Users/Jeremy/.rvm/gems/ruby-2.7.0/gems/devise-4.7.3/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 10.1ms | Allocations: 1763)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.0ms | Allocations: 6831)
+
+
+Started POST "/users" for ::1 at 2020-10-25 18:21:29 -0600
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"HhY/mcEWhjgjXXrzLA9QjwUkLo394dogCrIwcciqeWmZgjdro+Fvvx6Uiy+WgBp9F2V5xXsxQD3+rmfBKjAufA==", "user"=>{"email"=>"dude@email.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dude@email.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "dude@email.com"], ["encrypted_password", "$2a$12$EmdZbKQXNktveZO2zFauGuDfKT28jXI4aeurTfgq3fEzl3SOMm3wS"], ["created_at", "2020-10-26 00:21:30.031631"], ["updated_at", "2020-10-26 00:21:30.031631"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 279ms (ActiveRecord: 2.4ms | Allocations: 8049)
+
+
+Started GET "/" for ::1 at 2020-10-25 18:21:30 -0600
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:48
+  Rendered students/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1309)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 18.9ms | ActiveRecord: 0.5ms | Allocations: 6945)
+
+
+Started GET "/students" for ::1 at 2020-10-25 18:21:34 -0600
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:48
+  Rendered students/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1291)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 13.3ms | ActiveRecord: 0.5ms | Allocations: 6877)
+
+
+Started GET "/courses" for ::1 at 2020-10-25 18:21:36 -0600
+Processing by CoursesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  ↳ app/views/courses/index.html.erb:49
+  [1m[36mDepartment Load (0.3ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:51
+  [1m[36mDepartment Load (0.2ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:51
+  Rendered courses/index.html.erb within layouts/application (Duration: 11.2ms | Allocations: 2643)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 19.8ms | ActiveRecord: 1.1ms | Allocations: 8261)
+
+
+Started GET "/professors" for ::1 at 2020-10-25 18:21:37 -0600
+Processing by ProfessorsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering professors/index.html.erb within layouts/application
+  [1m[36mProfessor Load (0.2ms)[0m  [1m[34mSELECT "professors".* FROM "professors"[0m
+  ↳ app/views/professors/index.html.erb:48
+  Rendered professors/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1310)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 11.2ms | ActiveRecord: 0.5ms | Allocations: 6919)
+
+
+Started GET "/departments" for ::1 at 2020-10-25 18:21:38 -0600
+Processing by DepartmentsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.2ms)[0m  [1m[34mSELECT "departments".* FROM "departments"[0m
+  ↳ app/views/departments/index.html.erb:47
+  Rendered departments/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1421)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 20.4ms | ActiveRecord: 1.0ms | Allocations: 7003)
+
+
+Started GET "/sections" for ::1 at 2020-10-25 18:21:39 -0600
+Processing by SectionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mSection Load (0.6ms)[0m  [1m[34mSELECT "sections".* FROM "sections"[0m
+  ↳ app/views/sections/index.html.erb:50
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:52
+  [1m[36mProfessor Load (0.3ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:53
+  [1m[36mSemester Load (0.1ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:55
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:52
+  [1m[36mCACHE Professor Load (0.0ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:53
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:55
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:52
+  [1m[36mProfessor Load (0.1ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:53
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:55
+  Rendered sections/index.html.erb within layouts/application (Duration: 23.9ms | Allocations: 7604)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 32.6ms | ActiveRecord: 1.8ms | Allocations: 13209)
+
+
+Started GET "/semesters" for ::1 at 2020-10-25 18:21:40 -0600
+Processing by SemestersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering semesters/index.html.erb within layouts/application
+  [1m[36mSemester Load (0.2ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters"[0m
+  ↳ app/views/semesters/index.html.erb:49
+  Rendered semesters/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1298)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 14.9ms | ActiveRecord: 0.5ms | Allocations: 6876)
+
+
+Started GET "/sections" for ::1 at 2020-10-25 18:21:42 -0600
+Processing by SectionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mSection Load (0.2ms)[0m  [1m[34mSELECT "sections".* FROM "sections"[0m
+  ↳ app/views/sections/index.html.erb:50
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:52
+  [1m[36mProfessor Load (0.3ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:53
+  [1m[36mSemester Load (0.2ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:55
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:52
+  [1m[36mCACHE Professor Load (0.0ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:53
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:55
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:52
+  [1m[36mProfessor Load (0.2ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:53
+  [1m[36mCACHE Semester Load (0.1ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:55
+  Rendered sections/index.html.erb within layouts/application (Duration: 28.1ms | Allocations: 7588)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 38.4ms | ActiveRecord: 1.7ms | Allocations: 13165)
+
+
+Started GET "/departments" for ::1 at 2020-10-25 18:21:44 -0600
+Processing by DepartmentsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering departments/index.html.erb within layouts/application
+  [1m[36mDepartment Load (0.3ms)[0m  [1m[34mSELECT "departments".* FROM "departments"[0m
+  ↳ app/views/departments/index.html.erb:47
+  Rendered departments/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1405)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 12.7ms | ActiveRecord: 0.7ms | Allocations: 7016)
+
+
+Started GET "/professors" for ::1 at 2020-10-25 18:21:45 -0600
+Processing by ProfessorsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering professors/index.html.erb within layouts/application
+  [1m[36mProfessor Load (0.2ms)[0m  [1m[34mSELECT "professors".* FROM "professors"[0m
+  ↳ app/views/professors/index.html.erb:48
+  Rendered professors/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1294)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 18.5ms | ActiveRecord: 0.5ms | Allocations: 6891)
+
+
+Started GET "/professors" for ::1 at 2020-10-25 18:21:48 -0600
+Processing by ProfessorsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering professors/index.html.erb within layouts/application
+  [1m[36mProfessor Load (0.2ms)[0m  [1m[34mSELECT "professors".* FROM "professors"[0m
+  ↳ app/views/professors/index.html.erb:48
+  Rendered professors/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1294)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 19.6ms | ActiveRecord: 0.4ms | Allocations: 6895)
+
+
+Started GET "/courses" for ::1 at 2020-10-25 18:21:48 -0600
+Processing by CoursesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  ↳ app/views/courses/index.html.erb:49
+  [1m[36mDepartment Load (0.2ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:51
+  [1m[36mDepartment Load (0.4ms)[0m  [1m[34mSELECT "departments".* FROM "departments" WHERE "departments"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/courses/index.html.erb:51
+  Rendered courses/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 2627)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 19.4ms | ActiveRecord: 1.4ms | Allocations: 8210)
+
+
+Started GET "/sections" for ::1 at 2020-10-25 18:21:50 -0600
+Processing by SectionsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering sections/index.html.erb within layouts/application
+  [1m[36mSection Load (0.2ms)[0m  [1m[34mSELECT "sections".* FROM "sections"[0m
+  ↳ app/views/sections/index.html.erb:50
+  [1m[36mCourse Load (0.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:52
+  [1m[36mProfessor Load (0.1ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:53
+  [1m[36mSemester Load (0.1ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:55
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:52
+  [1m[36mCACHE Professor Load (0.0ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:53
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:55
+  [1m[36mCACHE Course Load (0.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:52
+  [1m[36mProfessor Load (0.3ms)[0m  [1m[34mSELECT "professors".* FROM "professors" WHERE "professors"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:53
+  [1m[36mCACHE Semester Load (0.0ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters" WHERE "semesters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/sections/index.html.erb:55
+  Rendered sections/index.html.erb within layouts/application (Duration: 19.6ms | Allocations: 7588)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 28.2ms | ActiveRecord: 1.2ms | Allocations: 13164)
+
+
+Started GET "/semesters" for ::1 at 2020-10-25 18:21:51 -0600
+Processing by SemestersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering semesters/index.html.erb within layouts/application
+  [1m[36mSemester Load (0.4ms)[0m  [1m[34mSELECT "semesters".* FROM "semesters"[0m
+  ↳ app/views/semesters/index.html.erb:49
+  Rendered semesters/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1282)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 14.2ms | ActiveRecord: 1.0ms | Allocations: 6882)
+
+
+Started GET "/students" for ::1 at 2020-10-25 18:21:52 -0600
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:48
+  Rendered students/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1291)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 18.1ms | ActiveRecord: 0.6ms | Allocations: 6870)
+
+
+Started GET "/students" for ::1 at 2020-10-25 18:22:01 -0600
+Processing by StudentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering students/index.html.erb within layouts/application
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students"[0m
+  ↳ app/views/students/index.html.erb:48
+  Rendered students/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1291)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 15.5ms | ActiveRecord: 0.5ms | Allocations: 6870)
+
+

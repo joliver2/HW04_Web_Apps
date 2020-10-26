@@ -1,5 +1,33 @@
 <p id="notice"><%= notice %></p>
+<header class='clearfix'>
+  <div class="left-nav">
+    <ul>
+      <li><%= link_to "Students", students_path %></li>
+    </ul>
+  </div>
+  <div class="right-nav">
+    <ul>
+      <li><%= link_to "Courses", courses_path %></li>
+    </ul>
+    <div class="right-nav">
+      <ul>
+        <li><%= link_to "Professors", professors_path %></li>
+      </ul>
+      <div class="right-nav">
+        <ul>
+          <li><%= link_to "Departments", departments_path %></li>
+        </ul>
+        <div class="right-nav">
+          <ul>
+            <li><%= link_to "Sections", sections_path %></li>
+          </ul>
+          <div class="right-nav">
+            <ul>
+              <li><%= link_to "Semesters", semesters_path %></li>
+            </ul>
 
+            </div>
+</header>
 <h1>Professors</h1>
 
 <table>
